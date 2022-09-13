@@ -1,0 +1,152 @@
+$text:white;
+$background:rgba(127, 105, 105, 0.982);
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  margin:auto;
+  //background-color: $background;
+  background-image: url("../pexels-adam-lukac-773958.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1{
+  font-size:300%;
+  font-family: sans-serif;
+  color:$text;
+}
+p{
+  font-size: 150%;
+  text-shadow: black 0px 0px 2px;
+}
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(0, 0, 0, 0.4);
+  color:$text;
+  padding: 0% 5%;
+  border-bottom: solid 2px $text;
+  h1{
+    font-size:xx-large;
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0% 2%;
+  }
+  li{
+    list-style: none;
+    margin-left: 5%;
+    padding: 0% 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+  }
+  
+  li:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  a{
+    text-decoration: none;
+    color:$text;
+    
+  }
+}
+
+.Maincontent{
+  padding-top:5%;
+  color:$text;
+  width:95%;
+  margin: auto;
+ 
+  
+  button{
+    color:$text;
+    padding:10px 15px;
+    margin-left:2%;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button:hover{
+    transform: scale(0.98);
+  }
+  .order-btn{
+    background-color: orange;
+  }
+  .read-more-btn{
+    background-color: transparent;
+    border:solid 2.5px white;
+  }
+  .main-content-btn{
+    display: flex;
+
+  }
+}
+
+.Aboutus{
+  padding-top: 5%;
+  width:95%;
+  margin:auto;
+  color:$text;
+}
+.Services{
+  padding-top: 5%;
+  width:95%;
+  margin:auto;
+  color:$text;
+  h2,
+  p{
+    color:black;
+    text-shadow: none;
+    font-size: 100%;
+  }
+  .card{
+    width:80%;
+    margin:auto;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 4%;
+  }
+  img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .beans,
+  .mugs,
+  .locations{
+    display: flex;
+  }
+  .beans-desc,
+  .mugs-desc,
+  .locations-desc{
+    margin-left:5%;
+  }
+  .beans-pic{
+    width:30%;
+    height:100%;
+  }
+  .mugs-pic{
+    width:30%;
+    height:100%;
+  }
+  .locations-pic{
+    width:30%;
+    height:100%;
+  }
+}
